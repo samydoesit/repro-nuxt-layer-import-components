@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-app",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "nuxi prepare",
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "typecheck": "nuxi typecheck"
+  },
+  "devDependencies": {
+    "nuxt-layer": "workspace:*",
+    "nuxt": "3.8.2"
+  }
+}

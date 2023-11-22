@@ -1,0 +1,21 @@
+{
+  "name": "monorepo-vue-starter",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter nuxt-app run build",
+    "dev": "pnpm --filter nuxt-app run dev",
+    "start:nuxt-app": "pnpm run start --filter nuxt-app",
+    "start": "pnpm -r run start",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "5.3.2"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  },
+  "packageManager": "pnpm@8.10.5"
+}
