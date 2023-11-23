@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm --filter nuxt-app run build",
-    "dev": "pnpm --filter nuxt-app run dev",
+    "build": "turbo pnpm --filter nuxt-app run build",
+    "dev": "turbo run dev --filter nuxt-app",
     "start:nuxt-app": "pnpm run start --filter nuxt-app",
     "start": "pnpm -r run start",
     "typecheck": "pnpm -r run typecheck"
@@ -17,5 +17,8 @@
     "node": ">=18",
     "pnpm": ">=7"
   },
-  "packageManager": "pnpm@8.10.5"
+  "packageManager": "pnpm@8.10.5",
+  "dependencies": {
+    "turbo": "^1.10.16"
+  }
 }
